@@ -10,5 +10,7 @@ targetCustomizations:
       matchLabels:
         plant: A
     helm:
+      values:
+        b: "b from inner-values"
       valuesFiles:
         - ./values/file-values.yaml
