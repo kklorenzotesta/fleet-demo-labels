@@ -4,6 +4,7 @@ helm:
   values:
     a: "a-from-values"
     b: "b-from-values"
+    d: ${ .ClusterLabels.plant }
 targetCustomizations:
   - name: labelled
     clusterSelector:
