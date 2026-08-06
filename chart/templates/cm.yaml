@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-cm
+data:
+  values: |
+    a is {{ .Values.a | required "a is required" }}
+    b is {{ .Values.b | required "b is required" }}
+    c is {{ .Values.c | required "c is required" }}

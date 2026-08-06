@@ -1,0 +1,14 @@
+helm:
+  chart: ./chart
+  version: 0.1.0
+  values:
+    a: "a-from-values"
+    b: "b-from-values"
+targetCustomizations:
+  - name: labelled
+    clusterSelector:
+      matchLabels:
+        plant: A
+    helm:
+      valuesFiles:
+        - ./values/file-values.yaml
