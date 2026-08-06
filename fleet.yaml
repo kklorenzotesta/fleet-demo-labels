@@ -5,6 +5,8 @@ helm:
     a: "a-from-values"
     b: "b-from-values"
     d: ${ .ClusterLabels.plant }
+  valuesFiles:
+    - ./values/base-values.yaml
 targetCustomizations:
   - name: labelled
     clusterSelector:

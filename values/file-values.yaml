@@ -1,3 +1,2 @@
 b: "b-from-file"
 c: "c-from-file"
-e: "label inside ${ .ClusterLabels.plant }"
