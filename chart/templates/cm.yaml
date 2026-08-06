@@ -8,3 +8,4 @@ data:
     b is {{ .Values.b | required "b is required" }}
     c is {{ .Values.c | required "c is required" }}
     d is {{ .Values.d }}
+    e is {{ .Values.e }}
